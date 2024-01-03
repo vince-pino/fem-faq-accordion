@@ -53,6 +53,10 @@ main {
   justify-content: space-between;
 }
 
+.question:hover {
+  color: rgb(170, 0, 170);
+}
+
 .question img {
   width: 30px;
 }
@@ -63,13 +67,51 @@ main {
   margin-bottom: 40px;
 }
 
-.hide {
-  display: none;
-}
-
 footer {
   margin-top: auto;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("../assets/images/background-pattern-mobile.svg");
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    width: 75%;
+    padding: 20px;
+  }
+
+  summary {
+    display: flex;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .title img {
+    width: 20px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .question img {
+    width: 20px;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
+
+
+}
