@@ -1,4 +1,13 @@
-const imageUrl = window.location.href + "/assets/images/";
+let imageUrl
+
+if (window.location.hostname === 'localhost' || window.location.hostname === 'vince-pino.github.io') {
+  // If running locally
+  imageUrl = window.location.origin + "/assets/images/";
+} else {
+  // If running on a server (like GitHub Pages)
+  imageUrl = window.location.href + "assets/images/";
+}
+
 const summary = document.querySelectorAll('summary');
 
 summary.forEach((summaryEl) => {
