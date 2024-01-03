@@ -1,4 +1,4 @@
-const imageUrl = window.location.origin + "/assets/images/";
+const imageUrl = window.location.href + "/assets/images/";
 const summary = document.querySelectorAll('summary');
 
 summary.forEach((summaryEl) => {
