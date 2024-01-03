@@ -1,6 +1,6 @@
 let imageUrl
 
-if (window.location.hostname === '127.0.0.1' || window.location.hostname === 'vince-pino.github.io') {
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
   // If running locally
   imageUrl = window.location.origin + "/assets/images/";
 } else {
